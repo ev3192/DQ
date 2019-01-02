@@ -1,0 +1,95 @@
+html{
+    max-width: 1920px;
+    max-height: 1080px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    position: relative;
+  }
+  
+section img {
+    max-width: 1920px;
+    max-height: 1080px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+
+.top {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-direction: alternate;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  .column img{
+    display: block;
+    width: 640px;
+    height: 480px;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+nav {
+    margin: 10px;
+    padding: 0;
+}
+
+nav ul {
+		list-style-type: none;
+		padding: 8px;
+		margin: 0;
+		overflow: hidden;
+		background-color: #808080
+}
+nav ul a {
+	text-decoration: none;
+}
+ul li {
+	float: left;
+}
+nav ul li a:hover {background-color: blue;}
+nav ul li a {
+	font-family: 'League Gothic', serif;
+	color: #F2F2F2;
+	padding: 0 16px;
+	margin: 8px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 20px;
+}

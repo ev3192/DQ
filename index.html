@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <centre>
+    <head>
+        <meta charset="utf-8">
+        <title>Dairy Queen Saanich - Millstream</title>
+        <link rel="stylesheet" href="styles.css">
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += "responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo_dq.png"/>
+            DQ
+        </header>
+
+        <nav>
+            <ul id="myTopnav" class="topnav">
+                    <li class="icon">
+                            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+                            </li>
+                <li> <a href="index.html" title="Return To Site Main Page"class=viewing>Home</a></li>
+                <li> <a href="menu.html" title="View Current Menu">Menu</a></li>
+                <li> <a href="promos.html" title="View Current Promos">Promos</a></li>
+                <li> <a href="gallery.html" title="View Photo Gallery">Photo Gallery</a></li>
+                <li> <a href="opportunity.html" title="Employment Opportunities">Employment Opportunities</a></li>
+                <li> <a href="contact.html" title="About Our Restaurant">Contact Us</a></li>
+            </ul>
+        </nav>
+
+            <section>
+                <img class="bottom" src="./images/burgers.jpeg"/>
+                <img class="top" src="./images/treats.jpeg"/>
+            </section>
+
+        <div id="locations">
+            <footer>
+                <div class="row">
+                    <div class="column">
+                        DQ Saanich<br>
+                        <img src="./images/saanich.jpeg" />
+                    </div>
+                    <div class="column">
+                        DQ Millstream<br>
+                        <img src="./images/millstream.png" />
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    </centre>
+</html>
