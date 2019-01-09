@@ -1,101 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"charset="utf-8">
-    <title>Dairy Queen Saanich - Millstream</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <ul id="myTopnav" class="topnav">
-                <li><a href="index.html" title="Return To Site Main Page"class=viewing><img src="./images/logo_dq.png"/></a></li>
-                <li> <div class="dropdown">
-                        <button class="dropbtn">Menu</button>
-                        <div class="dropdown-content">
-                            <a href="#">Grill Treats</a>
-                            <a href="#">Chill Treats</a>
-                            <a href="#">Gift Certificates</a>
-                        </div>
-                    </div> 
-                </li>
-                <li> <button><a href="promos.html" title="View Current Promos">Promos</a></button></li>
-                <li> <button><a href="gallery.html" title="View Photo Gallery">Photo Gallery</a></button></li>
-                <li> <button><a href="opportunity.html" title="Employment Opportunities">Employment Opportunities</a></button></li>
-                <li> <button><a href="contact.html" title="About Our Restaurant(s)">Contact Us</a></button></li>
-        </ul>
-    </nav>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"charset="utf-8">
+        <title>Dairy Queen Saanich - Millstream</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="myTopnav" class="topnav">
+                        <a href="index.html" title="Return To Site Main Page"class=viewing><img src="./images/logo_dq.png" class="logo"/></a>
+                     
+                        
+                        <li> <button><a href="contact.html" title="About Our Restaurant(s)">Contact</a></button></li>
+                        <li> <button><a href="opportunity.html" title="Employment Opportunities">Careers</a></button></li>
+                        <li> <button><a href="gallery.html" title="View Photo Gallery">Gallery</a></button></li>
+                        <li> <button><a href="promos.html" title="View Current Promos">Promos</a></button></li>
+                        <li> <div class="dropdown">
+                                <button class="dropbtn">Menu</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Grill Treats</a>
+                                    <a href="#">Chill Treats</a>
+                                    <a href="#">Gift Certificates</a>
+                                </div>
+                            </div> 
+                        </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <div class="slideshow-container">
 
-<div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_BOGO-Novelties_1500x625_CAEN.jpg?width=1500&height=625" id="image1"/>
+                <div class="text">Caption Text</div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_BOGO-Novelties_1500x625_CAEN.jpg?width=1500&height=625" style="width:100%"/>
-  <div class="text">Caption Text</div>
-</div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_Pretzels-and-PFS_1500x625_CAEN.jpg?width=1500&height=625" id="image2"/>
+                <div class="text">Caption Two</div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_Pretzels-and-PFS_1500x625_CAEN.jpg?width=1500&height=625" style="width:100%"/>
-  <div class="text">Caption Two</div>
-</div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://www.dairyqueen.com/Global/January%202019/Canada/BOM_Reeses-Outrageous_1500x625_CAEN.jpg?width=1500&height=625"id="image3"/>
+                <div class="text">Caption Three</div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://www.dairyqueen.com/Global/January%202019/Canada/BOM_Reeses-Outrageous_1500x625_CAEN.jpg?width=1500&height=625" style="width:100%"/>
-  <div class="text">Caption Three</div>
-</div>
+        </div>
+        <br>
 
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<div id="container" class="container">
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+  
         <table>
-            <div class="slideshow">
-                <tr>
-                    <th colspan="2"></th>
-                </tr>
-            </div>
-            <div id="labels">
-                <tr>
-                    <th><br/>Dairy Queen Saanich Centre</th>
-                    <th>Dairy Queen Millstream Road</th>
-                </tr>
-            </div>
-            <div id="locations">
-                <tr>
-                    <th id="saanich">
-                        <p>3933 Quadra Street<br/>
-                            Victoria, BC V8X 1J8<br/>
-                            (250)590-1008</p>
-                        <img src="./images/saanich.jpeg" /> 
-                    </th>
-                    <th id="millstream">
-                        <p>This is sample text for the new location on millstream road</p>
-                        <img src="./images/comingsoon.png" />
-                    </th>
-                </tr>
-            </div>
-        </table>
-    </div>
-    <footer>
-        <h2>About Us</h2>
-        <h4>Sample text</h4>
-        <a href="https://www.dairyqueen.com/ca-en/Privacy-Statement/?localechange=1&">Privacy Statement</a>
-        <a href="https://www.dairyqueen.com/ca-en/Visitor-Agreement/?localechange=1&">Visitor Agreement</a>
-    </footer>
-
-
-
-<script src="script.js">
-
-</script>
-
-</body>
+            <tr>
+                <th><p>DAIRY QUEEN SAANICH CENTRE<br/>
+                        3993 Quadra Street<br/>
+                        Victoria, BC V8X 1J8<br/>
+                        (250) 590-1008</p>
+                    <img src="./images/saanich.jpeg"/> 
+                </th>
+                <th>
+                <p>DAIRY QUEEN MILLSTREAM <br/>
+                    address line 1 <br/>
+                    address line 2<br/>
+                    phone</p>
+                <img src="./images/comingsoon.png" />
+                </th>
+            </tr>
+            </table>
+        <div class="bottom">
+            <h2>About Us</h2>
+            <h4>Sample text</h4>
+            <footer>
+                <a href="https://www.dairyqueen.com/ca-en/Privacy-Statement/?localechange=1&">Privacy Statement</a>
+                <a href="https://www.dairyqueen.com/ca-en/Visitor-Agreement/?localechange=1&">Visitor Agreement</a>   
+            </footer> 
+        </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html> 

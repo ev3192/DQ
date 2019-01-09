@@ -1,15 +1,27 @@
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+html{border: 20px solid black; outline-style: solid; outline-color: black; }
+body{font-family: 'Roboto', sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
+p{font-weight: normal;}
+.logo{
+  float: left;
+}
+html, body{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
+#image1, #image2, #image3{
+  height: 100%; width: 100%;
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -69,7 +81,7 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+/* .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -82,26 +94,18 @@ img {vertical-align: middle;}
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-table {
-    margin: 0 0;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
 
   /* Clear floats after the columns */
   .row:after {
@@ -111,13 +115,14 @@ table {
   }
 
 nav {
+  
   position: relative;
-    margin: 10px;
-    padding: 2px;
+    padding: 8px;
     background-size: contain;
 }
 
 nav ul {
+  height: 100%; width: 100%;
     list-style-type: none;
     padding: 8px;
     margin: 0;
@@ -129,12 +134,13 @@ nav ul a {
   color: #555;
 }
 ul li {
-  float: left;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 nav ul li a:hover {color: red;}
 /* Dropdown Button */
 .dropbtn {
-    padding: 16px;
     font-size: 16px;
     border: none;
     font-family: sans-serif;
@@ -167,7 +173,7 @@ nav ul li a:hover {color: red;}
   .dropdown-content a {
     text-decoration: none;
     display: block;
-    color: red;
+    color: #555;
   }
 
   /* Change color of dropdown links on hover */
@@ -187,14 +193,39 @@ nav ul li a:hover {color: red;}
     border: none;
     cursor:pointer;
     overflow: hidden;   
-    font-family:  sans-serif;
     color: #555;
     padding: 0 16px;
     margin: 8px;
     transition: 0.3s;
     font-size: 20px;    
   }
+body .about{
+  background-color: brown;
+  height: 100%; width: 100%;
+}
 
+table img{
+  height: 100%; width: 100%;
+}
+.bottom{
+  background-color: rgb(94, 47, 25);
+  text-align: center;
+}
   a{
     color: white;
   }
+  table{
+    height: 100%; width: 100%;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    color: black;
+  }
+  table img{
+    height: 75%;
+    width: 75%;
+  }
+  th{
+    text-align: center;
+  }
+  
