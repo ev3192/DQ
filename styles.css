@@ -81,7 +81,7 @@ html, body{
 }
 
 /* Next & previous buttons */
-/* .prev, .next {
+ .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -94,13 +94,13 @@ html, body{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-} */
+}
 
 /* Position the "next button" to the right */
-/* .next {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
-} */
+} 
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -199,7 +199,7 @@ nav ul li a:hover {color: red;}
     transition: 0.3s;
     font-size: 20px;    
   }
-body .about{
+.bottom{
   background-color: brown;
   height: 100%; width: 100%;
 }
@@ -211,8 +211,9 @@ table img{
   background-color: rgb(94, 47, 25);
   text-align: center;
 }
-  a{
+  footer, a{
     color: white;
+    text-decoration: none;
   }
   table{
     height: 100%; width: 100%;
@@ -227,5 +228,8 @@ table img{
   }
   th{
     text-align: center;
+  }
+  .footertext{
+    font-size: 12px;
   }
   
