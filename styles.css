@@ -98,7 +98,8 @@ html, body{
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 20px;
+  float: right;
   border-radius: 3px 0 0 3px;
 } 
 
@@ -231,5 +232,11 @@ table img{
   }
   .footertext{
     font-size: 12px;
+  }
+  iframe{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 0; 
   }
   
