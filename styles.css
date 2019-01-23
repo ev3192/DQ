@@ -237,6 +237,19 @@ table img{
     position: relative;
     width: 350px;
     height: 350px;
-    border: 0; 
+    border: 0;
+  }
+  .saanich{
+    float: top left;
+    width: 350px;
+    height: 350px;
+  }
+  .burgers{
+    float: top right;
+    width: 350px;
+    height: 350px;
+  }
+  .comingsoon{
+    float: top right;
   }
   
