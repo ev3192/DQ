@@ -274,3 +274,39 @@ nav ul li a:hover {color: red;}
     text-align: center;
     align-content: center;
   }
+  /* Gallery Formatting for responsiveness */
+  div.gallery {
+    border: 1px solid #ccc;
+    width: 30%;
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+    width: 35%;
+  }
+
+  div.gallery img {
+    height: auto;
+  }
+
+  div.desc {
+    padding: 1px;
+    text-align: center;
+  }
+
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+ /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
