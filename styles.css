@@ -1,6 +1,6 @@
 * {box-sizing: border-box;}
 html{border: 20px solid black; outline-style: solid; outline-color: black; }
-body{font-family: 'Roboto', sans-serif;}
+body{font-family: 'Roboto', sans-serif;padding-bottom: 0.1px;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 p{font-weight: normal;}
@@ -11,12 +11,12 @@ html, body{
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: -4px;
   
 }
-
 h1{
   font-size: 32px;
+  text-align: center;
 }
 h3{
   text-decoration: none;
@@ -119,14 +119,14 @@ nav {
   position: relative;
     padding: 8px;
     background-size: contain;
+    overflow: auto;
 }
 
 nav ul {
-  height: 100%; width: 100%;
     list-style-type: none;
     padding: 8px;
     margin: 0;
-    overflow: hidden;
+    
 }
 nav ul a {
   text-decoration: none;
@@ -262,9 +262,6 @@ nav ul li a:hover {color: red;}
   input:active{
       border:2px blue solid;
   }
-  footer{
-    width: 100%; height: 100%;
-  }
   sub{
     font-size: 11px;
     font-weight: normal;
@@ -274,22 +271,26 @@ nav ul li a:hover {color: red;}
     text-align: center;
     align-content: center;
   }
-  /* Gallery Formatting for responsiveness */
+  /* Picture Formatting */
   div.gallery {
-    border: 1px solid #ccc;
-    width: 30%;
+    border: 10px linear-gradient(#00bbdd,#0033dd);
+    background-image: linear-gradient(#00bbdd,#0033dd);
+    vertical-align: baseline;
+    
+    
+  }
+  div.pictures {
+    width: 90%;
     content: "";
     clear: both;
     display: table;
     
   }
-
-  div.gallery:hover {
-    border: 1px solid #777;
-    width: 35%;
+  div.pictures:hover {
+    width: 100%;
   }
 
-  div.gallery img {
+  div.pictures img {
     height: auto;
   }
 
@@ -298,15 +299,4 @@ nav ul li a:hover {color: red;}
     text-align: center;
   }
 
- .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-
- /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+ 
