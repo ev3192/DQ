@@ -28,7 +28,7 @@ h3{
   vertical-align: middle;
 }
 #image1, #image2, #image3{
-  max-height: 100%; width: 100%; height: 600px;
+  max-height: 100%; width: 100%; height: 450px;
 }
 /* Caption text */
 .text {
@@ -274,6 +274,8 @@ nav ul li a:hover {color: red;}
 
   /* Picture Formatting */
   div.gallery {
+    margin-top: -21px;
+    margin-bottom: -21px;
     border: 10px linear-gradient(#00bbdd,#0033dd);
     background-image: linear-gradient(#00bbdd,#0033dd);
     vertical-align: baseline;
