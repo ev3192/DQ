@@ -50,3 +50,13 @@ function showSlides() {
 function scrollWindow() {
   window.scrollTo(736,2335);
 }
+
+// Function to display hours from button
+function hoursDisplay() {
+  var x = document.getElementById("hoursdisplay");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

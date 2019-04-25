@@ -8,12 +8,12 @@
         <link rel="icon" href="./images/favicon.png">
     </head>
     <body>
+
         <header>
+            
             <nav>
                 <ul id="myTopnav" class="topnav">
                         <a href="index.html" title="Return To Site Main Page"class=viewing><img src="./images/logo_dq.png" class="logo"/></a>
-                     
-                        
                         <li> 
                             <button>
                                 <a class="scroll" href="index.html#bottom" onClick="scrollWindow('bottom')" title="About Our Restaurant(s)">Contact</a>
@@ -59,7 +59,40 @@
                                 </div>
                             </div> 
                         </li>
-                </ul>
+                    <li>
+                        <p>Millstream Dairy Queen<br>
+                        703 Treanor Rd.<br>
+                        </p>
+                    <button onclick="hoursDisplay()">Store Hours</button>
+                <div id="hoursdisplay" style="display:none">
+                <p>Mon 10am-10pm
+                Tue 10am-10pm
+                Wed 10am-10pm
+                Thu 10am-10pm
+                Fri 10am-10pm
+                Sat 10am-10pm
+                Sun 10am-10pm
+                </p>
+                </div>
+                    </li>
+                    
+                    <li>
+                        <p>Dairy Queen Saanich Centre<br>
+                        3993 Quadra St. (250)590-1008<br>
+                        </p>
+                    <button onclick="hoursDisplay()">Store Hours</button>
+                <div id="hoursdisplay" style="display:none">
+                Mon 10am-10pm<br>
+                Tue 10am-10pm<br>
+                Wed 10am-10pm<br>
+                Thu 10am-10pm<br>
+                Fri 10am-10pm<br>
+                Sat 10am-10pm<br>
+                Sun 10am-10pm<br>
+                </div>
+                    </li>
+                        
+                </ul> 
             </nav>
         </header>
         <main>

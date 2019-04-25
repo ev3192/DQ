@@ -311,3 +311,20 @@ nav ul li a:hover {color: red;}
     padding: 1px;
     text-align: center;
   }
+
+#hoursdisplay {
+  width: 10%;
+  padding: 5px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 2px;
+  padding-right: 20px;
+}
+
+#hoursdisplay p {
+  font-family: fantasy;
+}
+
+li p {
+    padding-right: 40px;
+}
