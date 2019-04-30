@@ -1,8 +1,6 @@
 var slideIndex = 1;
 selectSlides(slideIndex);
 showSlides();
-// var slideIndex = 1;
-// showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -48,5 +46,21 @@ function showSlides() {
 }
 
 function scrollWindow() {
-  window.scrollTo(736,2335);
+  window.location.assign("index.html")
+  return new Promise((resolve) => {
+    setTimeout(() => { 
+      window.scrollTo(736,2335); resolve(); }, 1000);
+  });
+}
+
+// Function to display hours from button
+function saanichHoursDisplay() {
+  var contentId = document.getElementById("saanich-hours");
+  contentId.style.display == "block" ? contentId.style.display = "none":
+  contentId.style.display="block";
+}
+function saanichBottomHoursDisplay() {
+  var contentId = document.getElementById("saanich-bottom");
+  contentId.style.display == "block" ? contentId.style.display = "none":
+  contentId.style.display="block";
 }

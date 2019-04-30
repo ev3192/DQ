@@ -7,6 +7,7 @@ p{font-weight: normal;}
 header{
   background-color: white;
 }
+
 .logo{
   float: left;
 }
@@ -31,6 +32,8 @@ h3{
 }
 #image1, #image2, #image3{
   max-height: 100%; width: 80%; height: 55%;
+  width:1500px;
+  height:625px;
   margin-left: 10%;
 }
 
@@ -135,10 +138,13 @@ nav ul a {
   text-decoration: none;
   color: #555;
 }
-ul li {
+.menu li {
   float: right;
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-top: 10px;
+}
+.store li {
+  float: left;
+  margin-top: 10px;
 }
 nav ul li a:hover {color: red;}
 /* Dropdown Button */
@@ -151,9 +157,11 @@ nav ul li a:hover {color: red;}
     margin: 8px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 18px;
     background-color: inherit;
   }
+
+  
 
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
@@ -163,7 +171,6 @@ nav ul li a:hover {color: red;}
 
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
-    padding-right: 2em;
     display: none;
     position: fixed;
     min-width: 160px;
@@ -185,6 +192,25 @@ nav ul li a:hover {color: red;}
     padding-left: 1em;
     color: white;
     background-color: rgb(187, 175, 255);
+  }
+
+  .dropdown-content p {
+    position: relative;
+    left: 30px;
+    color: #555;
+    padding-left: 3em;
+    background-color: white;
+    text-align: center !important;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content p:hover {
+    position: relative;
+    left: 30px;
+    padding-left: 3em;
+    color: white;
+    background-color: rgb(187, 175, 255);
+    text-align: center !important;
   }
 
   /* Show the dropdown menu on hover */
@@ -304,10 +330,47 @@ nav ul li a:hover {color: red;}
   }
 
   div.pictures img {
-    height: auto;
+    width: 600px;
+    height: 400px;
   }
 
   div.desc {
     padding: 1px;
     text-align: center;
   }
+
+#hoursdisplay {
+  width: 10%;
+  padding: 5px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 2px;
+  padding-right: 20px;
+}
+
+#hoursdisplay p {
+  font-family: fantasy;
+}
+
+li p {
+    padding-right: 40px;
+}
+
+#saanich-hours, #saanich-bottom {
+  display: none;
+}
+
+.hours-button{
+  display: flex;
+  color:red;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+}
+#saanich-bottom-button{
+  margin:0 auto;
+}
+.store-saanich li{
+  padding-left: 30px;
+  padding-right:  30px;
+}

@@ -12,72 +12,113 @@
             <nav>
                 <ul id="myTopnav" class="topnav">
                         <a href="index.html" title="Return To Site Main Page"class=viewing><img src="./images/logo_dq.png" class="logo"/></a>
-                     
-                        
-                        <li> 
-                            <button>
-                                <a class="scroll" href="index.html#bottom" onClick="scrollWindow('bottom')" title="About Our Restaurant(s)">Contact</a>
-                            </button>
-                        </li>
-                        <li>  
-                            <div class="dropdown"> 
-                                <button class="dropbtn">Careers</button>
-                                <div class="dropdown-content">
-                                    <a href="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">Saanich DQ</a>
-                                    <a href="#">Millstream DQ</a>
+                        <div class="menu">
+                            <li> 
+                                <button>
+                                    <a class="scroll" onclick=scrollWindow() title="About Our Restaurant(s)">Contact</a>
+                                </button>
+                            </li>
+                            <li>  
+                                <div class="dropdown"> 
+                                    <button class="dropbtn">Careers</button>
+                                    <div class="dropdown-content">
+                                        <a href="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">Saanich DQ</a>
+                                        <a href="#">Millstream DQ</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>  
+                                <div class="dropdown"> 
+                                    <button class="dropbtn">Gallery</button>
+                                    <div class="dropdown-content">
+                                        <a href="saanich-gallery.html">Saanich DQ</a>
+                                        <a href="millstream-gallery.html">Millstream DQ</a>
+                                    </div>
+                                </div> 
+                            </li>
+                            <li> <div class="dropdown">
+                                    <button class="dropbtn">Order Cakes</button>
+                                    <div class="dropdown-content">
+                                        <a href="https://www.dqcakes.com/#/select-cake-type/7793/1">Saanich DQ</a>
+                                        <a href="#">Millstream DQ</a>
+                                    </div>
+                                </div> 
+                            </li>
+                            <li> <div class="dropdown">
+                                    <button class="dropbtn">Menu</button>
+                                    <div class="dropdown-content">
+                                        <a href="https://www.dairyqueen.com/ca-en/Menu/Food/">Grill Treats</a>
+                                        <a href="https://www.dairyqueen.com/ca-en/Menu/Treats/">Chill Treats</a>
+                                        <a href="https://dq.cashstar.com/?locale=en_ca">Gift Certificates</a>
+                                    </div>
+                                </div> 
+                            </li>
+                        </div>
+
+                    <div class="store">
+                        <div class="store-saanich">
+                            <li>
+                                Dairy Queen Saanich Centre<br>
+                                    3993 Quadra St. <br>
+                                    (250) 590-1008<br>
+                                    <button class ="hours-button" onclick="saanichHoursDisplay()">Store Hours</button>
+                                <div id="saanich-hours" >
+                                    <p>
+                                    Mon 10am-10pm<br>
+                                    Tue 10am-10pm<br>
+                                    Wed 10am-10pm<br>
+                                    Thu 10am-10pm<br>
+                                    Fri 10am-10pm<br>
+                                    Sat 10am-10pm<br>
+                                    Sun 10am-10pm
+                                    </p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="store-millstream">
+                            <li>
+                            Millstream Dairy Queen<br>
+                                    703 Treanor Rd.<br>
+                                    Coming Soon!
+                                    <button class="dropbtn"></button>
+                                <!--<div class="dropdown-content">
+                                    <p>
+                                    Mon 10am-10pm<br>
+                                    Tue 10am-10pm<br>
+                                    Wed 10am-10pm<br>
+                                    Thu 10am-10pm<br>
+                                    Fri 10am-10pm<br>
+                                    Sat 10am-10pm<br>
+                                    Sun 10am-10pm<br>
+                                    </p>
                                 </div>
                             </div>
-                        </li>
-                        <li>  
-                            <div class="dropdown"> 
-                                <button class="dropbtn">Gallery</button>
-                                <div class="dropdown-content">
-                                    <a href="saanich-gallery.html">Saanich DQ</a>
-                                    <a href="millstream-gallery.html">Millstream DQ</a>
-                                </div>
-                            </div> 
-                        </li>
-                        <li> 
-                            <button>
-                                <a href="promos.html" title="View Current Promos">Promos</a>
-                            </button>
-                        </li>
-                        <li> <div class="dropdown">
-                                <button class="dropbtn">Order Cakes</button>
-                                <div class="dropdown-content">
-                                    <a href="https://www.dqcakes.com/#/select-cake-type/7793/1">Saanich DQ</a>
-                                    <a href="#">Millstream DQ</a>
-                                </div>
-                            </div> 
-                        </li>
-                        <li> <div class="dropdown">
-                                <button class="dropbtn">Menu</button>
-                                <div class="dropdown-content">
-                                    <a href="https://www.dairyqueen.com/ca-en/Menu/Food/">Grill Treats</a>
-                                    <a href="https://www.dairyqueen.com/ca-en/Menu/Treats/">Chill Treats</a>
-                                    <a href="https://dq.cashstar.com/?locale=en_ca">Gift Certificates</a>
-                                </div>
-                            </div> 
-                        </li>
-                </ul>
+                            -->
+                            </li>
+                        </div>
+                    </div>
+                </ul> 
             </nav>
         </header>
         <main>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_BOGO-Novelties_1500x625_CAEN.jpg?width=1500&height=625" id="image1"/>
-                <div class="text">Caption Text</div>
+                <!--<img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_BOGO-Novelties_1500x625_CAEN.jpg?width=1500&height=625" id="image1"/>-->
+                <img src="./images/burgers.jpeg?width=1500&height=625" id="image1"/>
+                <div class="text">Burgers</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_Pretzels-and-PFS_1500x625_CAEN.jpg?width=1500&height=625" id="image2"/>
-                <div class="text">Caption Two</div>
+                <!--<img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_Pretzels-and-PFS_1500x625_CAEN.jpg?width=1500&height=625" id="image2"/>-->
+                <img src="./images/counter.jpg?width=1500&height=625" id="image2"/>
+                <div class="text">Front Counter</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="https://www.dairyqueen.com/Global/January%202019/Canada/BOM_Reeses-Outrageous_1500x625_CAEN.jpg?width=1500&height=625"id="image3"/>
-                <div class="text">Caption Three</div>
+               <!-- <img src="https://www.dairyqueen.com/Global/January%202019/Canada/BOM_Reeses-Outrageous_1500x625_CAEN.jpg?width=1500&height=625"id="image3"/>-->
+               <img src="./images/treats.jpeg?width=1500&height=625" id="image3"/>
+               <div class="text">Cakes</div>
             </div>
 
         <br>
@@ -120,13 +161,27 @@
                                     </form>
                                     <form action="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">
                                         <p>Looking for a sweet job?</p>
-                                        <input type="submit" class="apply" value="Apply Here!"></input> <br/>
+                                        <input type="submit" class="apply" value="Apply Here!"></input> <br/><br/>
                                     </form>
+                                
+                                    <button id="saanich-bottom-button" class ="hours-button" onclick="saanichBottomHoursDisplay()">Store Hours</button>
+                                    <div id="saanich-bottom">
+                                       <p>
+                                        Mon 10am-10pm<br>
+                                        Tue 10am-10pm<br>
+                                        Wed 10am-10pm<br>
+                                        Thu 10am-10pm<br>
+                                        Fri 10am-10pm<br>
+                                        Sat 10am-10pm<br>
+                                        Sun 10am-10pm<br>
+                                        </p>
+                                    </div>
                                 <br/>3993 Quadra Street<br/>
                                     Victoria, BC V8X 1J8<br/>
                                     (250) 590-1008<br/>
                                     dq.saanich@gmail.com<br/><br/>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5290.641862752104!2d-123.36898263075366!3d48.46955745581997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f73c7fd4446ed%3A0xc859da36bca6366f!2s3993+Quadra+St%2C+Victoria%2C+BC+V8X+1J8!5e0!3m2!1sen!2sca!4v1547535984662" allowfullscreen></iframe>      
+                        
                         </div>
                     </td>
                     <td></td>
@@ -152,9 +207,12 @@
         </div>
             <div class="bottom">
                 <h1>About Us</h1>
+                <img src="./images/logo_dq3d.png"/>
                 <h3>Dairy Queen Saanich Centre & Millstream Dairy Queen are locally owned and operated. <br/> We strive to deliver <strong><i>FAST</i>, 
                     DELICIOUS DQ<sub>&reg;</sub> MEALS with EXCEPTIONAL SERVICE. </strong><br/>We're committed to 100% satisfaction to you, our DQ<sub>&reg;</sub> Fan!<br/> If you're not satisfied with any 
-                    of our products please tell us & we'll make it right. <br/>That's our promise to you, our Loyal DQ<sub>&reg;</sub> Fan!</h4>
+                    of our products please tell us & we'll make it right. <br/>That's our promise to you, our Loyal DQ<sub>&reg;</sub> Fan!</h3>
+                    <h4>Proud Supporters of:</h4>
+                    <a href="https://childrensmiraclenetwork.ca/"><img src="./images/children.png" width="200px"/></a>
                 <footer>
                     <p class="footertext">
                         ® T.M. AM.D.Q. CORP © 2019 AM.D.Q. CORP MPLS, MN<br>
