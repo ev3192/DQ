@@ -249,7 +249,7 @@ nav ul li a:hover {color: red;}
 .millstreamheading, .millstreamcontent{
   padding-right: 2em;
 }
-  table{
+  .contactTable table, .gallery table{
     table-layout: fixed;
     width: 100%;
     height: 100%;
@@ -358,9 +358,15 @@ li p {
 
 #saanich-hours, #saanich-bottom {
   display: none;
+  text-align: center;
+}
+#millstream-hours, #millstream-bottom {
+  display: none;
+  text-align: center;
 }
 
 .hours-button{
+  padding: 0;
   display: flex;
   color:red;
   font-size: 18px;
@@ -373,4 +379,17 @@ li p {
 .store-saanich li{
   padding-left: 30px;
   padding-right:  30px;
+}
+
+.hours-table td {
+  margin: 0;
+  padding: 0;
+}
+.hours-table th{
+  padding-left: 10px;
+}
+
+.hours-table tr{
+  
+  text-align: center;
 }

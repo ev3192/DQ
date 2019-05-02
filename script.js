@@ -64,3 +64,15 @@ function saanichBottomHoursDisplay() {
   contentId.style.display == "block" ? contentId.style.display = "none":
   contentId.style.display="block";
 }
+
+function millstreamHoursDisplay() {
+  var contentId = document.getElementById("millstream-hours");
+  contentId.style.display == "block" ? contentId.style.display = "none":
+  contentId.style.display="block";
+}
+
+function millstreamBottomHoursDisplay() {
+  var contentId = document.getElementById("millstream-bottom");
+  contentId.style.display == "block" ? contentId.style.display = "none":
+  contentId.style.display="block";
+}
