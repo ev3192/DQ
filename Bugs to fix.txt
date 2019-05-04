@@ -1,3 +1,0 @@
-the padding on the index is different than the gallery pages
-whitespace between the gallery and the footer
-the contact link needs to link to the index page on the bottom

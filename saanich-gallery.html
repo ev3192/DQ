@@ -15,7 +15,7 @@
                                 <div class="menu">
                                     <li> 
                                         <button>
-                                            <a class="scroll" href="index.html#bottom" onClick="scrollWindow('bottom')" title="About Our Restaurant(s)">Contact</a>
+                                            <a class="scroll" href="index.html" title="About Our Restaurant(s)">Contact</a>
                                         </button>
                                     </li>
                                     <li>  
@@ -23,7 +23,7 @@
                                             <button class="dropbtn">Careers</button>
                                             <div class="dropdown-content">
                                                 <a href="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">Saanich DQ</a>
-                                                <a href="#">Millstream DQ</a>
+                                               <!-- <a href="#">Millstream DQ</a>-->
                                             </div>
                                         </div>
                                     </li>
@@ -40,7 +40,7 @@
                                             <button class="dropbtn">Order Cakes</button>
                                             <div class="dropdown-content">
                                                 <a href="https://www.dqcakes.com/#/select-cake-type/7793/1">Saanich DQ</a>
-                                                <a href="#">Millstream DQ</a>
+                                                <!--<a href="#">Millstream DQ</a>-->
                                             </div>
                                         </div> 
                                     </li>
@@ -56,47 +56,71 @@
                                 </div>
         
                             <div class="store">
-                            <li>
-                                <div class="dropdown">
-                                    <button class="dropbtn">Millstream Dairy Queen<br>
-                                        703 Treanor Rd.<br>
-                                        Coming Soon!</button>
+                                <div class="store-saanich">
+                                    <li>
+                                        Dairy Queen Saanich Centre<br>
+                                            3993 Quadra St. <br>
+                                            (250) 590-1008<br>
+                                            <button class ="hours-button" onclick="saanichHoursDisplay()">Saanich Hours</button>
+                                        <div id="saanich-hours" >
+                                            
+                                            <p>
+                                                <b>Store Hours</b><br>
+                                                Mon 10am-10pm<br>
+                                                Tue 10am-10pm<br>
+                                                Wed 10am-10pm<br>
+                                                Thu 10am-10pm<br>
+                                                Fri 10am-10pm<br>
+                                                Sat 10am-10pm<br>
+                                                Sun 10am-10pm
+                                            </p>
+                                        </div>
+                                    </li>
                                 </div>
-                                    <!--<div class="dropdown-content">
-                                        <p>
-                                        Mon 10am-10pm<br>
-                                        Tue 10am-10pm<br>
-                                        Wed 10am-10pm<br>
-                                        Thu 10am-10pm<br>
-                                        Fri 10am-10pm<br>
-                                        Sat 10am-10pm<br>
-                                        Sun 10am-10pm<br>
-                                        </p>
-                                    </div>
+                                <div class="store-millstream">
+                                    <li>
+                                    Millstream Dairy Queen<br>
+                                            703 Treanor Rd.<br>
+                                            Coming Soon!
+                                            <button class="hours-button" onclick="millstreamHoursDisplay()">Millstream Hours</button>
+                                            <div id="millstream-hours" class="hours-table" >
+                                                <table >
+                                                    <tr>
+                                                        <th>Store Hours</th>
+                                                        <th>Drive Through Hours</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mon 10am-10pm</td>
+                                                        <td>Mon 10am-10pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tue 10am-10pm</td>
+                                                        <td>Tue 10am-10pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wed 10am-10pm</td>
+                                                        <td>Wed 10am-10pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thu 10am-10pm</td>
+                                                        <td>Thu 10am-10pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fri 10am-10pm</td>
+                                                        <td>Fri 10am-10pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sat 10am-10pm</td>
+                                                        <td>Sat 10am-10pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sun 10am-10pm</td>
+                                                        <td>Sun 10am-10pm</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                    </li>
                                 </div>
-                                -->
-                            </li>
-                        
-                            
-                            <li>
-                                <div class="dropdown">
-                                    <button class="dropbtn">Dairy Queen Saanich Centre<br>
-                                        3993 Quadra St. <br>
-                                        (250) 590-1008<br>
-                                        Store Hours</button>
-                                    <div class="dropdown-content">
-                                       <p>
-                                        Mon 10am-10pm<br>
-                                        Tue 10am-10pm<br>
-                                        Wed 10am-10pm<br>
-                                        Thu 10am-10pm<br>
-                                        Fri 10am-10pm<br>
-                                        Sat 10am-10pm<br>
-                                        Sun 10am-10pm<br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
                             </div>
                         </ul> 
                     </nav>

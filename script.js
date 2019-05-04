@@ -46,11 +46,7 @@ function showSlides() {
 }
 
 function scrollWindow() {
-  window.location.assign("index.html")
-  return new Promise((resolve) => {
-    setTimeout(() => { 
-      window.scrollTo(736,2335); resolve(); }, 1000);
-  });
+  window.scrollTo(740,1200);
 }
 
 // Function to display hours from button
