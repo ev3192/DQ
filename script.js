@@ -46,7 +46,7 @@ function showSlides() {
 }
 
 function scrollWindow() {
-  window.scrollTo(740,1200);
+  window.scrollTo(0,1275);
 }
 
 // Function to display hours from button

@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box; max-width: 100%;}
 html{border: 20px solid black; outline-style: solid; outline-color: black; }
 body{font-family: 'Roboto', sans-serif; background-color: #99c2ff;}
 .mySlides {display: none;}
@@ -90,7 +90,6 @@ h3{
 }
 
 /* Next & previous buttons */
-
  .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -245,12 +244,29 @@ nav ul li a:hover {color: red;}
     color: black;
     text-decoration: none;
   }
-.saanichheading, .saanichcontent{
+.row{
+  display: flex;
+  max-width: 100%;
+}
+.column{
+  flex: 33.33%;
+}
+
+.fanfood{
+  margin: auto;
+  top: 50%;
+  bottom: 50%;
+  position: relative;
+}
+
+ .saanichcontent{
   /*padding-left: 250px;*/
   padding-left: 2em;
+  font-size: 30px;
 }
-.millstreamheading, .millstreamcontent{
+ .millstreamcontent{
   padding-right: 2em;
+  font-size:30px;
 }
   .contactTable table, .gallery table{
     table-layout: fixed;
@@ -260,6 +276,18 @@ nav ul li a:hover {color: red;}
     align-content: center;
     align-self: center;
     color: black;
+  }
+
+  .contactTable table tr{
+    flex: 33.33%;
+    
+  }
+  .saanich-left{
+    display: flex;
+  }
+
+  .saanich-right{
+    display: flex;    
   }
   
   .footertext{
@@ -283,9 +311,10 @@ nav ul li a:hover {color: red;}
   }
 
   .facebook{
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
   }
+
   input{
     padding: 1em;
     border: 2px solid black;
@@ -295,12 +324,15 @@ nav ul li a:hover {color: red;}
     text-align: center;
     align-content: center;
   }
+
   input:hover{
     background-color: white;
   }
+
   input:active{
       border:2px blue solid;
   }
+
   sub{
     font-size: 11px;
     font-weight: normal;
@@ -361,7 +393,11 @@ li p {
     padding-right: 40px;
 }
 
-#saanich-hours, #saanich-bottom {
+#saanich-bottom p, #millstream-bottom table tr td, #millstream-bottom table tr th{
+  font-size:24px;
+}
+
+#saanich-hours , #saanich-bottom {
   display: none;
   text-align: center;
 }
@@ -372,7 +408,6 @@ li p {
 
 .hours-button, .hours-button button{
   padding: 0;
-  display: flex;
   color:red;
   font-size: 18px;
   text-align: center;
@@ -381,25 +416,73 @@ li p {
 
 #saanich-bottom-button, #millstream-bottom-button{
   margin:0 auto;
+  font-size: 30px;
 }
 .store-saanich li{
   padding-left: 30px;
   padding-right:  30px;
+  margin: 0;
 }
 
 .hours-table td {
   margin: 0;
   padding: 0;
 }
+
 .hours-table th{
   padding-left: 10px;
 }
 
 .hours-table tr{
-  
   text-align: center;
 }
 
 #bottom-hours-button{
   text-align: center;
+}
+
+.store-millstream li{
+  margin: 0;
+}
+
+form p{
+  font-size: 18px;
+}
+
+.saanich-icons{
+  padding-right: 0 auto;
+}
+p{
+  word-wrap: break-word;
+  overflow: hidden; 
+}
+.millstream-info{
+  margin: 0 auto;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.saanichcontent{
+  text-align: left;
+}
+.millstreamcontent *{
+  text-align: right;
+}
+
+iframe{
+  margin: 0;
+  text-align: center;
+  width: 500px;
+  height: 400px;
+}
+
+.bhours{
+  text-align: left;
+}
+.contact-table{
+  width: 100%;
+  text-align: center;
+}
+
+.store-table{
+  border: 1px solid black;
 }

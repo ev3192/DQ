@@ -15,7 +15,7 @@
                         <div class="menu">
                             <li> 
                                 <button>
-                                    <a class="scroll" onclick=scrollWindow() title="About Our Restaurant(s)">Contact</a>
+                                    <a href="https://www.dairyqueen.com/ca-en/Company/Contact-Us/?localechange=1&" title="Contact Us">Contact</a>
                                 </button>
                             </li>
                             <li>  
@@ -79,15 +79,15 @@
                         </div>
                         <div class="store-millstream">
                             <li>
-                            Millstream Dairy Queen<br>
+                                Millstream Dairy Queen<br>
                                     703 Treanor Rd.<br>
-                                    Coming Soon!
+                                    Coming Soon!<br>
                                     <button class="hours-button" onclick="millstreamHoursDisplay()">Millstream Hours</button>
                                     <div id="millstream-hours" class="hours-table" >
                                         <table >
                                             <tr>
                                                 <th>Store Hours</th>
-                                                <th>Drive Through Hours</th>
+                                                <th>Drive Thru Hours</th>
                                             </tr>
                                             <tr>
                                                 <td>Mon 10am-10pm</td>
@@ -130,103 +130,120 @@
 
             <div class="mySlides fade">
                 <!--<img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_BOGO-Novelties_1500x625_CAEN.jpg?width=1500&height=625" id="image1"/>-->
-                <img src="./images/burgers.jpeg?width=1500&height=625" id="image1"/>
-                <div class="text">Burgers</div>
+                <img onclick="scrollWindow()" src="https://www.dairyqueen.com/Global/05-2019/May-Canada/BOM_OH-Henry_1500x625_CAEN.jpg?width=1500&height=625" id="image1"/>
+                
             </div>
 
             <div class="mySlides fade">
                 <!--<img src="https://www.dairyqueen.com/Global/January 2019/Canada/Q1-2019_Pretzels-and-PFS_1500x625_CAEN.jpg?width=1500&height=625" id="image2"/>-->
-                <img src="./images/counter.jpg?width=1500&height=625" id="image2"/>
-                <div class="text">Front Counter</div>
+                <img onclick="scrollWindow()"src="https://www.dairyqueen.com/Global/05-2019/May-Canada/BLIZZARD_Mini-Blizzard-Flight_1500x625_CAEN.jpg?width=1500&height=625" id="image2"/>
+                
             </div>
 
             <div class="mySlides fade">
                <!-- <img src="https://www.dairyqueen.com/Global/January%202019/Canada/BOM_Reeses-Outrageous_1500x625_CAEN.jpg?width=1500&height=625"id="image3"/>-->
-               <img src="./images/treats.jpeg?width=1500&height=625" id="image3"/>
-               <div class="text">Cakes</div>
+               <img onclick="scrollWindow()" src="https://www.dairyqueen.com/Global/0419/CAKES_2019-Q2_Mothers-Day_1500x625_CAEN.jpg?width=1500&height=625" id="image3"/>
+               
+               
             </div>
-
-        <br>
+            <span style="display: none" class="dot" onclick="currentSlide(1)"></span>
+            <span style="display: none" class="dot" onclick="currentSlide(2)"></span>
+            <span style="display: none" class="dot" onclick="currentSlide(3)"></span> 
+            
+            
+            
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
         
-    </div>
-        <br/>
+        </div>
         <div class="contactTable" id="scroll">
             <table>
                 <tr>
-                    <th class="saanichheading">   
-                        <h2>DAIRY QUEEN SAANICH CENTRE<br/><br/>
-                        <img src="./images/saanich.jpeg" class="saanich"/> 
-                        </h2>     
+                    <th colspan="2" class="store-headings">   
+                        <div class="row">
+                            <div class="column">
+                                <h2>DAIRY QUEEN SAANICH CENTRE<br/><br/>
+                                    <img src="./images/saanich.jpeg" class="saanich"/> 
+                                </h2>    
+                            </div>
+                            <div class="column">
+                                <img src="./images/dq-logo-rgb.jpg" class="fanfood"/>
+                            </div>
+                            <div class="column">
+                                <h2>MILLSTREAM DAIRY QUEEN<br/><br/>
+                                    <img src="./images/comingsoon.png" class="comingsoon"/> 
+                                </h2>
+                            </div>
+                        </div>            
                     </th>
-                    <th>
-                        <br><br><br>
-                        <img src="./images/dq-logo-rgb.jpg" class="fanfood"/>
-                    </th>
-                    <th class="millstreamheading">
-                        <h2>MILLSTREAM DAIRY QUEEN<br/><br/>
-                        <img src="./images/comingsoon.png" class="comingsoon"/> 
-                        </h2>    
-                    </th> 
+                       
                 </tr>
                 <tr>
                     <td>
                         <div class="saanichcontent">
-                                <a href="https://www.facebook.com/DQ27107/"><img src="./images/facebook-logo.png" class="facebook"></img></a>
-                                    <form action="https://www.dqcakes.com/#/select-cake-type/7793/1">
-                                        <input type="submit" class="order-cakes" value="Order Cakes"></input>
-                                    </form>
-                                    <form action="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">
-                                        <p>Looking for a sweet job?</p>
-                                        <input type="submit" class="apply" value="Apply Here!"></input> <br/><br/>
-                                    </form>
-                                
+                            <div class="row">
+                                <div class="column">
                                     <button id="saanich-bottom-button" class ="hours-button" onclick="saanichBottomHoursDisplay()">Saanich Hours</button>
-                                    <div id="saanich-bottom">
-                                       <p><b>Store Hours</b><br/>
-                                        Mon 10am-10pm<br>
-                                        Tue 10am-10pm<br>
-                                        Wed 10am-10pm<br>
-                                        Thu 10am-10pm<br>
-                                        Fri 10am-10pm<br>
-                                        Sat 10am-10pm<br>
-                                        Sun 10am-10pm<br>
-                                        </p>
+                                    <div id="saanich-bottom" class="hours-table">
+                                    
+                                    <p class="bhours"><b>Store Hours</b><br/>
+                                    Mon 10am-10pm<br>
+                                    Tue 10am-10pm<br>
+                                    Wed 10am-10pm<br>
+                                    Thu 10am-10pm<br>
+                                    Fri 10am-10pm<br>
+                                    Sat 10am-10pm<br>
+                                    Sun 10am-10pm<br>
+                                    </p>
                                     </div>
-                                <br/>3993 Quadra Street<br/>
+                                    <br/>
+                                    3993 Quadra Street<br/>
                                     Victoria, BC V8X 1J8<br/>
                                     (250) 590-1008<br/>
-                                    dq.saanich@gmail.com<br/><br/>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5290.641862752104!2d-123.36898263075366!3d48.46955745581997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f73c7fd4446ed%3A0xc859da36bca6366f!2s3993+Quadra+St%2C+Victoria%2C+BC+V8X+1J8!5e0!3m2!1sen!2sca!4v1547535984662" allowfullscreen></iframe>      
-                        
+                                </div>
+                                <div class="column">
+                                    <div class="saanich-icons">
+                                <a href="https://www.facebook.com/DQ27107/"><img src="./images/facebook-logo.png" class="facebook"></img></a>
+                                <form action="https://www.dqcakes.com/#/select-cake-type/7793/1">
+                                    <input type="submit" class="order-cakes" value="Order Cakes"></input>
+                                </form>
+                                <form action="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">
+                                    <p>Looking for a sweet job?</p>
+                                    <input type="submit" class="apply" value="Apply Here!"></input> <br/><br/>
+                                </form>
+                            </div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5290.641862752104!2d-123.36898263075366!3d48.46955745581997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f73c7fd4446ed%3A0xc859da36bca6366f!2s3993+Quadra+St%2C+Victoria%2C+BC+V8X+1J8!5e0!3m2!1sen!2sca!4v1547535984662" allowfullscreen ></iframe>             
+                        </div>
                         </div>
                     </td>
-                    <td></td>
                     <td>
                         <div class="millstreamcontent">
-                            <a href="https://www.facebook.com/DQ27107/"><img src="./images/facebook-logo.png" class="facebook"></img></a>
-                                    <form action="https://www.dqcakes.com/#/select-cake-type/7793/1">
-                                        <input type="submit" class="order-cakes" value="Order Cakes"></input>
-                                    </form>
-                                    <form action="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">
-                                        <p>Looking for a sweet job?</p>
-                                        <input type="submit" class="apply" value="Apply Here!"></input> <br/>
-                                    </form>
-                                    <br/>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="millstream-icons">
+                                        <a href="https://www.facebook.com/DQ27107/"><img src="./images/facebook-logo.png" class="facebook"></img></a>
+                                        <form action="https://www.dqcakes.com/#/select-cake-type/7793/1">
+                                            <input type="submit" class="order-cakes" value="Order Cakes"></input>
+                                        </form>
+                                        <form action="https://www.dairyqueen.com/ca-en/Locator/Detail/7793#careers">
+                                            <p>Looking for a sweet job?</p>
+                                            <input type="submit" class="apply" value="Apply Here!"></input> <br/>
+                                        </form>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div class="column">
                                     <button id="millstream-bottom-button" class="hours-button" onclick="millstreamBottomHoursDisplay()">Millstream Hours</button>
                                     <div id="millstream-bottom" class="hours-table" >
                                         <table>
                                             <tr>
                                                 <th>Store Hours</th>
-                                                <th>Drive Through Hours</th>
+                                                <th>Drive Thru Hours</th>
                                             </tr>
                                             <tr>
                                                 <td>Mon 10am-10pm</td>
@@ -261,12 +278,17 @@
                                     <br/>703 Treanor Ave. <br/>
                                         Langford, BC V9B OB1<br/>
                                         (Coming Soon!)<br/>
-                                        dq.millstream@gmail.com<br/><br/>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5836749687624!2d-123.50258098410696!3d48.46451703631174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f0d45da277e55%3A0x5a3dfa64d154d5f0!2s703+Treanor+Ave%2C+Victoria%2C+BC+V9B+3R3!5e0!3m2!1sen!2sca!4v1547536102762" allowfullscreen></iframe>
-                        </div>
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> &nbsp;<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5836749687624!2d-123.50258098410696!3d48.46451703631174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f0d45da277e55%3A0x5a3dfa64d154d5f0!2s703+Treanor+Ave%2C+Victoria%2C+BC+V9B+3R3!5e0!3m2!1sen!2sca!4v1547536102762" allowfullscreen></iframe>
+                     
                     </td>
                 </tr>
             </table>
+            
+                      
         </div>
             <div class="bottom">
                 <h1>About Us</h1>
