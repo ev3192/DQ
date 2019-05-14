@@ -1,9 +1,10 @@
-* {box-sizing: border-box; max-width: 100%;}
+* {box-sizing: border-box; }
 html{border: 20px solid black; outline-style: solid; outline-color: black; }
 body{font-family: 'Roboto', sans-serif; background-color: #99c2ff;}
+main{max-width: 100%; max-height: 100%;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
-p{font-weight: normal;}
+p{font-weight: normal; word-wrap: break-word; overflow: hidden; }
 header{
   background-color: white;
 }
@@ -18,7 +19,6 @@ body{
   margin-bottom: -12px;
 }
 h1{
-  font-size: 32px;
   text-align: center;
 }
 
@@ -35,9 +35,9 @@ h3{
 #image1, #image2, #image3{
   max-height: 100%;
   max-width: 100%;
-  height: 550px;
   width: 80%;
   margin-left: 10%;
+  height: 25vw;
 }
 
 /* Caption text */
@@ -239,6 +239,7 @@ nav ul li a:hover {color: red;}
 .bottom{
   background-color: #ffff00;
   text-align: center;
+  font-size: 18px;
 }
   footer, a{
     color: black;
@@ -256,17 +257,17 @@ nav ul li a:hover {color: red;}
   margin: auto;
   top: 50%;
   bottom: 50%;
+  width: 50%;
   position: relative;
 }
 
  .saanichcontent{
-  /*padding-left: 250px;*/
-  padding-left: 2em;
-  font-size: 30px;
+  text-align: center;
+  font-size: 20px;
 }
  .millstreamcontent{
-  padding-right: 2em;
-  font-size:30px;
+  text-align: center;
+  font-size: 20px;
 }
   .contactTable table, .gallery table{
     table-layout: fixed;
@@ -277,37 +278,13 @@ nav ul li a:hover {color: red;}
     align-self: center;
     color: black;
   }
-
-  .contactTable table tr{
-    flex: 33.33%;
-    
-  }
-  .saanich-left{
-    display: flex;
-  }
-
-  .saanich-right{
-    display: flex;    
-  }
   
   .footertext{
     font-size: 12px;
     text-align: center;
   }
-  iframe{
-    position: relative;
-    width: 350px;
-    min-width: 10%;
-    height: 350px;
-    border: 0;
-  }
-  .contactTable, table, th, tr, p, img, iframe{
-    max-width: 100%;
-    max-height: 100%;
-  }
   .saanich, .comingsoon{
-    width: 508px;
-    height: 333px;
+    width: 90%;
   }
 
   .facebook{
@@ -364,8 +341,8 @@ nav ul li a:hover {color: red;}
   }
 
   div.pictures img {
-    width: 600px;
-    height: 400px;
+    width: 20vw;
+    height: 20vw;
   }
 
   div.desc {
@@ -385,9 +362,15 @@ nav ul li a:hover {color: red;}
 #saanich-bottom p, #saanich-hours p, #millstream-hours td,#millstream-hours th, #millstream-bottom td, #millstream-bottom th {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
-  padding: 0;
+}
+.icon-button{
+  padding: 10px;
+  font-size: 20px;
 }
 
+.icons form {
+  font-size: 20px;
+}
 
 li p {
     padding-right: 40px;
@@ -416,22 +399,19 @@ li p {
 
 #saanich-bottom-button, #millstream-bottom-button{
   margin:0 auto;
-  font-size: 30px;
+  font-size: 28px;
 }
+
 .store-saanich li{
   padding-left: 30px;
   padding-right:  30px;
   margin: 0;
 }
 
-.hours-table td {
-  margin: 0;
-  padding: 0;
+h2{
+  font-size: 2vw;
 }
 
-.hours-table th{
-  padding-left: 10px;
-}
 
 .hours-table tr{
   text-align: center;
@@ -445,44 +425,30 @@ li p {
   margin: 0;
 }
 
-form p{
-  font-size: 18px;
+form {
+  font-size: 1.5vw;
 }
 
-.saanich-icons{
-  padding-right: 0 auto;
+.icons{
+  text-align: center;
 }
-p{
-  word-wrap: break-word;
-  overflow: hidden; 
-}
+
 .millstream-info{
-  margin: 0 auto;
   max-width: 100%;
   word-wrap: break-word;
 }
-.saanichcontent{
-  text-align: left;
-}
-.millstreamcontent *{
-  text-align: right;
-}
 
 iframe{
-  margin: 0;
-  text-align: center;
-  width: 500px;
-  height: 400px;
+  width: 22vw;
+  height: 22vw;
 }
 
-.bhours{
-  text-align: left;
+.bhours {
+  text-align: center;
+  font-size: 1.5vw;
 }
 .contact-table{
   width: 100%;
+  height: 100%;
   text-align: center;
-}
-
-.store-table{
-  border: 1px solid black;
 }
