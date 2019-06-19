@@ -1,3 +1,0 @@
-map
-image layout upon resize
-update header for gallery pages to comment millstream hours
